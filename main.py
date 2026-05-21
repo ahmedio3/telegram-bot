@@ -5,8 +5,8 @@ import requests, logging
 
 app = Flask(__name__)
 
-TELEGRAM_TOKEN = "8890553117:AAEkXKWSpLEWamtRCKY88Ixv5D_l5TfRU78"
-GEMINI_API_KEY  = "AIzaSyCcakIq8oPkP-Ip6Ci2R-nlIcNd6d_Z9fk"
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 SYSTEM = """أنت عالم إسلامي تتكلم بأسلوب الإمام النووي رحمه الله:
