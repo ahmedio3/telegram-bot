@@ -17,7 +17,7 @@ SYSTEM = """أنت عالم إسلامي تتكلم بأسلوب الإمام ا
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(
-    model_name='gemini-2.0-flash-lite',
+    model_name='gemini-3.1-flash-lite',
     system_instruction=SYSTEM
 )
 histories = {}
